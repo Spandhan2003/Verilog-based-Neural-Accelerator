@@ -1,0 +1,105 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port outen -pg 1 -y 920 -defaultsOSRD
+preplace port p_en -pg 1 -y 960 -defaultsOSRD
+preplace port n_en -pg 1 -y 120 -defaultsOSRD
+preplace port outen_1 -pg 1 -y 1140 -defaultsOSRD
+preplace port outen_2 -pg 1 -y 1360 -defaultsOSRD
+preplace port outen_3 -pg 1 -y 1580 -defaultsOSRD
+preplace port rst -pg 1 -y 140 -defaultsOSRD
+preplace port clk -pg 1 -y 100 -defaultsOSRD
+preplace port mac -pg 1 -y 160 -defaultsOSRD
+preplace portBus p_out -pg 1 -y 900 -defaultsOSRD
+preplace portBus in3_2 -pg 1 -y 1360 -defaultsOSRD
+preplace portBus in4 -pg 1 -y 940 -defaultsOSRD
+preplace portBus wgh_3 -pg 1 -y 660 -defaultsOSRD
+preplace portBus in3_3 -pg 1 -y 1580 -defaultsOSRD
+preplace portBus bias -pg 1 -y 80 -defaultsOSRD
+preplace portBus in4_1 -pg 1 -y 1160 -defaultsOSRD
+preplace portBus wgh -pg 1 -y 60 -defaultsOSRD
+preplace portBus p_out_1 -pg 1 -y 1120 -defaultsOSRD
+preplace portBus in4_2 -pg 1 -y 1380 -defaultsOSRD
+preplace portBus p_out_2 -pg 1 -y 1340 -defaultsOSRD
+preplace portBus in4_3 -pg 1 -y 1600 -defaultsOSRD
+preplace portBus in1_1 -pg 1 -y 1100 -defaultsOSRD
+preplace portBus n_out_1 -pg 1 -y 300 -defaultsOSRD
+preplace portBus p_out_3 -pg 1 -y 1560 -defaultsOSRD
+preplace portBus in1_2 -pg 1 -y 1320 -defaultsOSRD
+preplace portBus n_out_2 -pg 1 -y 500 -defaultsOSRD
+preplace portBus in1_3 -pg 1 -y 1540 -defaultsOSRD
+preplace portBus in2_1 -pg 1 -y 1120 -defaultsOSRD
+preplace portBus n_out_3 -pg 1 -y 700 -defaultsOSRD
+preplace portBus in2_2 -pg 1 -y 1340 -defaultsOSRD
+preplace portBus bias_1 -pg 1 -y 280 -defaultsOSRD
+preplace portBus n_in_1 -pg 1 -y 240 -defaultsOSRD
+preplace portBus n_in -pg 1 -y 40 -defaultsOSRD
+preplace portBus in2_3 -pg 1 -y 1560 -defaultsOSRD
+preplace portBus bias_2 -pg 1 -y 480 -defaultsOSRD
+preplace portBus n_in_2 -pg 1 -y 440 -defaultsOSRD
+preplace portBus bias_3 -pg 1 -y 680 -defaultsOSRD
+preplace portBus n_in_3 -pg 1 -y 640 -defaultsOSRD
+preplace portBus n_out -pg 1 -y 100 -defaultsOSRD
+preplace portBus in1 -pg 1 -y 880 -defaultsOSRD
+preplace portBus in2 -pg 1 -y 900 -defaultsOSRD
+preplace portBus wgh_1 -pg 1 -y 260 -defaultsOSRD
+preplace portBus in3_1 -pg 1 -y 1140 -defaultsOSRD
+preplace portBus in3 -pg 1 -y 920 -defaultsOSRD
+preplace portBus wgh_2 -pg 1 -y 460 -defaultsOSRD
+preplace inst pooling_1 -pg 1 -lvl 1 -y 1130 -defaultsOSRD
+preplace inst neuron_3 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace inst pooling_2 -pg 1 -lvl 1 -y 1350 -defaultsOSRD
+preplace inst pooling_3 -pg 1 -lvl 1 -y 1570 -defaultsOSRD
+preplace inst neuron_0 -pg 1 -lvl 1 -y 300 -defaultsOSRD
+preplace inst neuron_1 -pg 1 -lvl 1 -y 500 -defaultsOSRD
+preplace inst neuron_2 -pg 1 -lvl 1 -y 700 -defaultsOSRD
+preplace inst pooling_0 -pg 1 -lvl 1 -y 910 -defaultsOSRD
+preplace netloc pooling_2_p_out 1 1 1 N
+preplace netloc wgh_2_1 1 0 1 NJ
+preplace netloc in4_3_1 1 0 1 N
+preplace netloc in4_2_1 1 0 1 N
+preplace netloc in3_2_1 1 0 1 N
+preplace netloc neuron_2_n_out 1 1 1 NJ
+preplace netloc in4_1 1 0 1 N
+preplace netloc en_1 1 0 1 40
+preplace netloc pooling_2_outen 1 1 1 N
+preplace netloc in2_1_1 1 0 1 N
+preplace netloc en_2 1 0 1 10
+preplace netloc rst_1 1 0 1 20
+preplace netloc in2_3_1 1 0 1 N
+preplace netloc in1_1 1 0 1 N
+preplace netloc pooling_3_outen 1 1 1 N
+preplace netloc in3_3_1 1 0 1 N
+preplace netloc in2_2_1 1 0 1 N
+preplace netloc wgh_3_1 1 0 1 NJ
+preplace netloc n_in_3_1 1 0 1 NJ
+preplace netloc in2_1 1 0 1 N
+preplace netloc bias_2_1 1 0 1 NJ
+preplace netloc neuron_3_n_out 1 1 1 NJ
+preplace netloc pooling_3_p_out 1 1 1 N
+preplace netloc pooling_1_p_out 1 1 1 N
+preplace netloc clk_1 1 0 1 30
+preplace netloc bias_1 1 0 1 NJ
+preplace netloc n_in_1 1 0 1 NJ
+preplace netloc pooling_1_outen 1 1 1 N
+preplace netloc mac_1 1 0 1 10
+preplace netloc bias_3_1 1 0 1 NJ
+preplace netloc n_in_1_1 1 0 1 NJ
+preplace netloc neuron_0_n_out 1 1 1 NJ
+preplace netloc bias_1_1 1 0 1 NJ
+preplace netloc neuron_1_n_out 1 1 1 NJ
+preplace netloc in1_3_1 1 0 1 N
+preplace netloc in1_2_1 1 0 1 N
+preplace netloc in4_1_1 1 0 1 N
+preplace netloc in1_1_1 1 0 1 N
+preplace netloc wgh_1_1 1 0 1 NJ
+preplace netloc n_in_2_1 1 0 1 NJ
+preplace netloc in3_1_1 1 0 1 N
+preplace netloc wgh_1 1 0 1 NJ
+preplace netloc pooling_0_outen 1 1 1 N
+preplace netloc pooling_0_p_out 1 1 1 N
+preplace netloc in3_1 1 0 1 N
+levelinfo -pg 1 -10 170 510 -top -10 -bot 1670
+",
+}
+0

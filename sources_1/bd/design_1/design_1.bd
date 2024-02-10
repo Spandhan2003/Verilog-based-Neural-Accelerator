@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x33FD7EBA03332714" bd:device="xc7k160tfbg484-3" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.3" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>clk</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>RST.RST</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>rst</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>n_out</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_out_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_out_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_out_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_in_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_in_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_in_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>wgh</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>bias</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>wgh_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>bias_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>wgh_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>bias_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>wgh_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>bias_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>clk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>n_en</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>rst</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>mac</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>p_en</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in4</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in1_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in2_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in3_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in4_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in1_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in2_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in3_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in4_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in1_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in2_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in3_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>in4_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>p_out</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>outen</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>p_out_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>outen_1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>p_out_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>outen_2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>p_out_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>outen_3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>neuron_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="neuron" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_neuron_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">neuron</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pooling_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="pooling" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_pooling_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">pooling</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>neuron_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="neuron" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_neuron_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">neuron</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>neuron_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="neuron" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_neuron_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">neuron</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>neuron_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="neuron" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_neuron_0_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">neuron</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pooling_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="pooling" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_pooling_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">pooling</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pooling_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="pooling" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_pooling_0_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">pooling</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>pooling_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="pooling" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_pooling_0_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">pooling</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>neuron_3_n_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="n_out"/>
+        <spirit:externalPortReference spirit:portRef="n_out"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>neuron_0_n_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="n_out"/>
+        <spirit:externalPortReference spirit:portRef="n_out_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>neuron_1_n_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="n_out"/>
+        <spirit:externalPortReference spirit:portRef="n_out_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>neuron_2_n_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="n_out"/>
+        <spirit:externalPortReference spirit:portRef="n_out_3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n_in_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="n_in"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="n_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n_in_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="n_in_1"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="n_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n_in_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="n_in_2"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="n_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>n_in_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="n_in_3"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="n_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>wgh_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="wgh"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="wgh"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bias_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="bias"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="bias"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>wgh_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="wgh_1"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="wgh"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bias_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="bias_1"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="bias"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>wgh_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="wgh_2"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="wgh"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bias_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="bias_2"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="bias"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>wgh_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="wgh_3"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="wgh"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>bias_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="bias_3"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="bias"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>en_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="n_en"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="en"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rst_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="rst"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>mac_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="mac"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_0" spirit:portRef="mac"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_1" spirit:portRef="mac"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_2" spirit:portRef="mac"/>
+        <spirit:internalPortReference spirit:componentRef="neuron_3" spirit:portRef="mac"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>en_2</spirit:name>
+        <spirit:externalPortReference spirit:portRef="p_en"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="en"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="en"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in1"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in2"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in3"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="in3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in4_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in4"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="in4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in1_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in1_1"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in2_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in2_1"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in3_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in3_1"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="in3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in4_1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in4_1"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="in4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in1_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in1_2"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in2_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in2_2"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in3_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in3_2"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="in3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in4_2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in4_2"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="in4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in1_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in1_3"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in2_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in2_3"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in3_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in3_3"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="in3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>in4_3_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="in4_3"/>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="in4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_0_p_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="p_out"/>
+        <spirit:externalPortReference spirit:portRef="p_out"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_0_outen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_0" spirit:portRef="outen"/>
+        <spirit:externalPortReference spirit:portRef="outen"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_1_p_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="p_out"/>
+        <spirit:externalPortReference spirit:portRef="p_out_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_1_outen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_1" spirit:portRef="outen"/>
+        <spirit:externalPortReference spirit:portRef="outen_1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_2_p_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="p_out"/>
+        <spirit:externalPortReference spirit:portRef="p_out_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_2_outen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_2" spirit:portRef="outen"/>
+        <spirit:externalPortReference spirit:portRef="outen_2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_3_p_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="p_out"/>
+        <spirit:externalPortReference spirit:portRef="p_out_3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>pooling_3_outen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="pooling_3" spirit:portRef="outen"/>
+        <spirit:externalPortReference spirit:portRef="outen_3"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

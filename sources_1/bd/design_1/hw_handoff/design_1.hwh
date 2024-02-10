@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 14 18:08:40 2023" VIVADOVERSION="2016.3">
+
+  <SYSTEMINFO ARCH="kintex7" DEVICE="7k160t" NAME="design_1" PACKAGE="fbg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="15" NAME="n_out" RIGHT="0" SIGIS="undef" SIGNAME="neuron_3_n_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_3" PORT="n_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="n_out_1" RIGHT="0" SIGIS="undef" SIGNAME="neuron_0_n_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="n_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="n_out_2" RIGHT="0" SIGIS="undef" SIGNAME="neuron_1_n_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_1" PORT="n_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="n_out_3" RIGHT="0" SIGIS="undef" SIGNAME="neuron_2_n_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_2" PORT="n_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="n_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_3" PORT="n_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="n_in_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="n_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="n_in_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_1" PORT="n_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="n_in_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_2" PORT="n_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="wgh" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_3" PORT="wgh"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_3" PORT="bias"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="wgh_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="wgh"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="bias_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="bias"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="wgh_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_1" PORT="wgh"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="bias_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_1" PORT="bias"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="wgh_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_2" PORT="wgh"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="bias_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_2" PORT="bias"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="clk"/>
+        <CONNECTION INSTANCE="neuron_1" PORT="clk"/>
+        <CONNECTION INSTANCE="neuron_2" PORT="clk"/>
+        <CONNECTION INSTANCE="neuron_3" PORT="clk"/>
+        <CONNECTION INSTANCE="pooling_0" PORT="clk"/>
+        <CONNECTION INSTANCE="pooling_1" PORT="clk"/>
+        <CONNECTION INSTANCE="pooling_2" PORT="clk"/>
+        <CONNECTION INSTANCE="pooling_3" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="n_en" SIGIS="undef" SIGNAME="External_Ports_n_en">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="en"/>
+        <CONNECTION INSTANCE="neuron_1" PORT="en"/>
+        <CONNECTION INSTANCE="neuron_2" PORT="en"/>
+        <CONNECTION INSTANCE="neuron_3" PORT="en"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="rst"/>
+        <CONNECTION INSTANCE="neuron_1" PORT="rst"/>
+        <CONNECTION INSTANCE="neuron_2" PORT="rst"/>
+        <CONNECTION INSTANCE="neuron_3" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mac" SIGIS="undef" SIGNAME="External_Ports_mac">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="neuron_0" PORT="mac"/>
+        <CONNECTION INSTANCE="neuron_1" PORT="mac"/>
+        <CONNECTION INSTANCE="neuron_2" PORT="mac"/>
+        <CONNECTION INSTANCE="neuron_3" PORT="mac"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="p_en" SIGIS="undef" SIGNAME="External_Ports_p_en">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="en"/>
+        <CONNECTION INSTANCE="pooling_1" PORT="en"/>
+        <CONNECTION INSTANCE="pooling_2" PORT="en"/>
+        <CONNECTION INSTANCE="pooling_3" PORT="en"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="in2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="in3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="in4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in1_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in2_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="in2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in3_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="in3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in4_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="in4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in1_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in2_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="in2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in3_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="in3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in4_2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="in4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in1_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in2_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="in2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in3_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="in3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="in4_3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="in4"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="pooling_0_p_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="p_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="outen" SIGIS="undef" SIGNAME="pooling_0_outen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_0" PORT="outen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="p_out_1" RIGHT="0" SIGIS="undef" SIGNAME="pooling_1_p_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="p_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="outen_1" SIGIS="undef" SIGNAME="pooling_1_outen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_1" PORT="outen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="p_out_2" RIGHT="0" SIGIS="undef" SIGNAME="pooling_2_p_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="p_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="outen_2" SIGIS="undef" SIGNAME="pooling_2_outen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_2" PORT="outen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="p_out_3" RIGHT="0" SIGIS="undef" SIGNAME="pooling_3_p_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="p_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="outen_3" SIGIS="undef" SIGNAME="pooling_3_outen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pooling_3" PORT="outen"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/neuron_0" HWVERSION="1.0" INSTANCE="neuron_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="neuron" VLNV="xilinx.com:module_ref:neuron:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_neuron_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="n_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_in_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wgh" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wgh_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bias_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mac" SIGIS="undef" SIGNAME="External_Ports_mac">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mac"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="n_out" RIGHT="0" SIGIS="undef" SIGNAME="neuron_0_n_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_out_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/neuron_1" HWVERSION="1.0" INSTANCE="neuron_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="neuron" VLNV="xilinx.com:module_ref:neuron:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_neuron_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="n_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_in_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wgh" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wgh_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bias_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mac" SIGIS="undef" SIGNAME="External_Ports_mac">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mac"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="n_out" RIGHT="0" SIGIS="undef" SIGNAME="neuron_1_n_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_out_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/neuron_2" HWVERSION="1.0" INSTANCE="neuron_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="neuron" VLNV="xilinx.com:module_ref:neuron:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_neuron_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="n_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_in_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wgh" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wgh_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bias_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mac" SIGIS="undef" SIGNAME="External_Ports_mac">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mac"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="n_out" RIGHT="0" SIGIS="undef" SIGNAME="neuron_2_n_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_out_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/neuron_3" HWVERSION="1.0" INSTANCE="neuron_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="neuron" VLNV="xilinx.com:module_ref:neuron:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_neuron_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="n_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_n_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wgh" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_wgh">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="wgh"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="bias" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bias">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bias"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mac" SIGIS="undef" SIGNAME="External_Ports_mac">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mac"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="n_out" RIGHT="0" SIGIS="undef" SIGNAME="neuron_3_n_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="n_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pooling_0" HWVERSION="1.0" INSTANCE="pooling_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pooling" VLNV="xilinx.com:module_ref:pooling:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pooling_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_p_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="pooling_0_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="outen" SIGIS="undef" SIGNAME="pooling_0_outen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="outen"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pooling_1" HWVERSION="1.0" INSTANCE="pooling_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pooling" VLNV="xilinx.com:module_ref:pooling:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pooling_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in2_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in3_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in4_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_p_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="pooling_1_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_out_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="outen" SIGIS="undef" SIGNAME="pooling_1_outen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="outen_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pooling_2" HWVERSION="1.0" INSTANCE="pooling_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pooling" VLNV="xilinx.com:module_ref:pooling:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pooling_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in2_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in3_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in4_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_p_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="pooling_2_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_out_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="outen" SIGIS="undef" SIGNAME="pooling_2_outen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="outen_2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pooling_3" HWVERSION="1.0" INSTANCE="pooling_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pooling" VLNV="xilinx.com:module_ref:pooling:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pooling_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in1_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in1_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in2_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in2_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in3_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in3_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="in4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_in4_3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="in4_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_p_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="p_out" RIGHT="0" SIGIS="undef" SIGNAME="pooling_3_p_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="p_out_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="outen" SIGIS="undef" SIGNAME="pooling_3_outen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="outen_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
